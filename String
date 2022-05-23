@@ -1,0 +1,30 @@
+String are immutable in java as following reasons:-
+
+1. The string in java cannot be modified because of security reasons, synchronization
+	which makes others not able to edit it.
+
+Difference between string and string builder.!
+Strings should be used when we know we are not going to use it later 
+it means we don't need to change the variable later on in our project. 
+
+String builder is the best way to write a string when we know we may have to 
+change the current String variable at later journey. So String Builder
+makes possible to re edit the string at later part of the project.
+
+Example :-
+
+String str 1 = "Abc";
+String str 2 = "Abc";
+
+here both are same and it will print true when we compare it.
+System.out.println(str1 == str2);
+
+but 
+String str1 = "Abc";
+String str2 = new String("Abc);
+
+here even though both addresses are same still we will get false when we try 
+to compare it.
+System.out.print(str1 == str2);
+
+
